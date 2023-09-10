@@ -7,10 +7,10 @@
 .container {
     height: 100vh;
     width: 100vw;
+    /* background-color: #; */
     background-image: url('https://wallpaperaccess.com/full/5045061.jpg');
-    /* https://wallpapercave.com/wp/wp7516650.jpg */
-    background-size: cover;
-    display: flex;
+    /* background-image: url('https://wallpapercave.com/wp/wp7516650.jpg'); */
+    background-size: cover;    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -56,20 +56,20 @@
     font-size: 1rem;
     font-weight: bold;
 }
-
+/* 
 .inputContainer input:focus {
     background-color: rgba(199, 199, 199, 0.22);
     display: inline-block;
     box-shadow: 0 0 0 0.2rem #b9abe0;
     backdrop-filter: blur(12rem);
     border-radius: 2rem;
-}
+} */
 
-.inputContainer input::placeholder {
+/* .inputContainer input::placeholder {
     color: #fff;
     font-weight: 100;
     font-size: 1rem;
-}
+} */
 
 .buttonContainer {
     margin: 1rem 0 2rem 0;
@@ -164,6 +164,10 @@
         font-size: small;
     }
 }
+.nextLink{
+    text-decoration: none;
+    /* font-weight: 800; */
+}
 @media only screen and (min-width:411px) {
     .loginContainer {
         width: 80vw;
@@ -187,4 +191,10 @@
         width: 30vw;
         height: 80vh;
     }
+}
+
+button:disabled{
+    cursor: not-allowed;
+    opacity: 0.1;
+
 }

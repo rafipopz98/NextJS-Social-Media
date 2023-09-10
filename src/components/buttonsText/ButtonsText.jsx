@@ -1,9 +1,11 @@
 import React from "react";
 
-const ButtonsText = ({ children ,disabled}) => {
+const ButtonsText = ({ children, disabled, onClick }) => {
   return (
-    <div className="buttonContainer" >
-      <button disabled={disabled} className="buttonLogin">{children}</button>
+    <div className="buttonContainer">
+      <button onClick={onClick} disabled={disabled} className="buttonLogin">
+        {children}
+      </button>
     </div>
   );
 };

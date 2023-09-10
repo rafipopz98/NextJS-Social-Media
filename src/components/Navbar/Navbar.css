@@ -1,9 +1,12 @@
 .navbar {
+    /* background-color: rgb(245, 240, 240); */
+    margin: 0 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
     height: 50px;
+    border-bottom: 1px solid rgb(209, 205, 205);
 }
 
 .navbar .left {
@@ -31,6 +34,7 @@
 .search input {
     border: none;
     width: 500px;
+    outline: none;
 }
 
 .navbar .right {
@@ -42,6 +46,7 @@
 .right .icon{
     width: 20px;
     height: 20px;
+    cursor: pointer;
     /* background-color: red; */
 }
 
@@ -58,7 +63,19 @@
     border-radius: 50%;
     object-fit: cover;
 }
+.logout{
+    cursor: pointer;
+}
+@media only screen and (max-width:1024px) {
+    .left .search{
+        display: none;
+    }
+    
+}
 @media only screen and (max-width:920px) {
+    .navbar{
+        margin:  auto;
+    }
     .search input{
         display: none;
     }

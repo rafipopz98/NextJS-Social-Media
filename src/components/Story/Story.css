@@ -1,0 +1,115 @@
+.stories {
+    display: flex;
+    gap: 10px;
+    height: 200px;
+    /* border-radius: 10px; */
+    margin: 30px 5%;
+    /* overflow: scroll; */
+    overflow-y: hidden;
+    overflow-x: visible;
+    overflow: none;
+}
+
+.stories::-webkit-scrollbar{
+    height: 3px;
+    width: 3px;
+    /* background-color: red; */
+}
+
+.stories .story {
+    /* flex: 1; */
+    /* overflow-x: scroll; */
+    /* height: 200px; */
+    width: 250px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.story img {
+    width: 200px;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story .pfp {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.story span {
+    display: flex;
+    position: absolute;
+    bottom: 13px;
+    left: 40px;
+    /* z-index: 1000; */
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.story button {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    color: #fff;
+    background-color: darkslateblue;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cstrory span {
+    left: 10px;
+}
+
+@media only screen and (max-width:768px) {
+    .stories{
+        /* background-color: red; */
+        height: 60px;
+        overflow: none;
+        overflow-y: hidden;
+    }
+    .story {
+        /* background-color: red; */
+        width: 30px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .story img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .story .pfp {
+        display: none;
+    }
+    .story span{
+        position: absolute;
+        color: #000;
+        bottom: -18px;
+        left: 6px;
+    }
+
+    .cstrory button {
+        display: none;
+    }
+
+}

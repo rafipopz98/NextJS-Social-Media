@@ -27,7 +27,7 @@ const Navbar = () => {
         <RiMessengerLine className="icon"/>
         <div className="user">
           <img src="https://wallpaperaccess.com/full/5045061.jpg" alt="image" />
-          <span>Logout</span>
+          <span className="logout">Logout</span>
         </div>
       </div>
     </div>

@@ -1,18 +1,21 @@
 .stories {
     display: flex;
+    align-items: center;
+    /* background-color: red; */
     gap: 10px;
     height: 200px;
     /* border-radius: 10px; */
-    margin: 30px 5%;
+    margin: 10px 5%;
     /* overflow: scroll; */
     overflow-y: hidden;
     overflow-x: visible;
     overflow: none;
+    /* margin-top: 70px; */
 }
 
-.stories::-webkit-scrollbar{
-    height: 3px;
-    width: 3px;
+.stories::-webkit-scrollbar {
+    height: 3px; 
+    /* width: 3px; */
     /* background-color: red; */
 }
 
@@ -20,10 +23,12 @@
     /* flex: 1; */
     /* overflow-x: scroll; */
     /* height: 200px; */
-    width: 250px;
+    /* background-color: red; */
+    width: 200px;
     border-radius: 10px;
     /* overflow: hidden; */
     position: relative;
+    cursor: pointer;
 }
 
 .story img {
@@ -31,6 +36,16 @@
     border-radius: 10px;
     height: 100%;
     object-fit: cover;
+    opacity: 0.89;
+    /* background: linear-gradient(to right, #919192 0%, #eff2f9 79%);
+    backdrop-filter: blur(25px); */
+}
+.cstrory img{
+    width: 200px;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 .story .pfp {
@@ -41,6 +56,9 @@
     width: 30px;
     border-radius: 50%;
     cursor: pointer;
+    /* border: 2px solid red; */
+    border: 2px solid rgba(214 36 155 1);
+    /* background-color: red; */
 }
 
 .story span {
@@ -53,14 +71,17 @@
     font-weight: 500;
 
 }
+.cstrory{
+    position: relative;
+}
 
-.story button {
+.cstrory button {
     position: absolute;
-    bottom: 40px;
-    left: 10px;
+    bottom: -1px;
+    right: -5px;
     color: #fff;
     background-color: darkslateblue;
-    border: none;
+    border: 2px solid white;
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -72,35 +93,54 @@
     justify-content: center;
 }
 
-.cstrory span {
-    left: 10px;
-}
+/* .cstrory span {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+bottom: 10px;
+background-color: red;
+    left: 28px;
+} */
 
 @media only screen and (max-width:768px) {
-    .stories{
+    .stories {
         /* background-color: red; */
-        height: 60px;
+        gap: 10px;
+        height: 80px;
         overflow: none;
         overflow-y: hidden;
     }
+
     .story {
         /* background-color: red; */
-        width: 30px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         position: relative;
     }
 
     .story img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
+        border: 2px solid red;
     }
 
     .story .pfp {
         display: none;
     }
+    .cstrory{
+        position: relative;
+    }
+
+    .cstrory img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        /* border: 2px solid red; */
+    }
+
     .story span{
         position: absolute;
         color: #000;
@@ -109,7 +149,15 @@
     }
 
     .cstrory button {
-        display: none;
+        border: 2px solid white;
+        font-size: 20px;
+        background-color: rebeccapurple;
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 29px;
+        right: -7px;
     }
 
 }

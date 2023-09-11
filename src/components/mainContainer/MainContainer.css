@@ -1,0 +1,260 @@
+.postttt{
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    /* justify-content: flex-start; */
+    /* left: 10rem; */
+}
+.sugggessttionss{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 20px;
+    width: 100%;
+    gap: 10px;
+    border-radius: 5px;
+    background-color:hsla(0, 20%, 46%, 0.115);
+    /* border: 2px solid black; */
+}
+.suggCon{
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+.mainPS {
+
+    /* margin: 10px 7% 10px 17%; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.postContainer {
+    max-width: 700px;
+    width: 100%;
+}
+
+.postBox {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    margin-bottom: 2rem;
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.postProfile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.postProfile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid rgba(214 36 155 1);
+}
+
+.nameTop { 
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.locationTop {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.iconDots {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.postImg {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.postBottom {
+    display: grid;
+    padding: 10px 15px;
+}
+
+.actionIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.saveIcon {
+    margin: 0 0 0 auto;
+}
+
+.actionIcons .iconsBottom {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.likes {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.comment {
+    display: block;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.comment a {
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+.viewMore {
+    font-size: 0.9rem;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.postTime {
+    font-size: 0.8rem;
+    color: #8b8b8b;
+    margin-top: 0.5rem;
+}
+
+.suggestionContainer {
+    max-width: 300px;
+    width: 100%;
+}
+
+.suggestionHeading {
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.suggestionHeading h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #8b8b8b;
+}
+
+.suggestionHeading a {
+    font-size: 0.9rem;
+    font-weight: 500px;
+}
+
+.profileBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.sideProfile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+.sideProfile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid rgba(214 36 155 1);
+}
+.usernameH{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.popular{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.followBtn{
+    text-decoration: none;
+    background-color: rgb(128, 128, 240);
+    padding: 6px 4px;
+    font-size: 0.9rem;
+    border-radius: 2px;
+    font-weight: 500;
+    color: white;
+}
+@media (max-width:912px) {
+   
+    .suggCon{
+        display: none;
+    }
+}
+
+@media (max-width:1024px) {
+    .suggCon{
+        display: none;
+    }
+}
+@media(max-width:875px){
+    .suggestionContainer{
+        display: none;
+    }
+    .suggCon{
+        display: none;
+    }
+    .postContainer{
+        margin: auto;
+    }
+}
+@media(max-width:550px){
+    .postttt{
+        left: 0;
+    }
+    .postBox{
+        border: none;
+    }
+    .postImg{
+        height: 450px;
+    }
+    section{
+        margin-top: 2rem !important;
+    }
+}
+@media (max-width:380px) {
+    .postImg{
+        height: 350px;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+}
+.saveIcon:hover{
+background-color: black;
+/* fill: black; */
+
+/* font-size: 20px; */
+} 

@@ -4,6 +4,7 @@ import ButtonsText from "../buttonsText/ButtonsText";
 import { useState } from "react";
 import { FaGoogle, FaGithub,FaFacebook } from "react-icons/fa";
 const googleB = "linear-gradient(to right, #919192 0%, #eff2f9 79%);";
+// import {ConnectionDB} from '../../database/db'
 const Auth = () => {
   
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const Auth = () => {
   let name, value;
 
   const inputHandler = (e) => {
+    // ConnectionDB();
     name = e.target.name;
     value = e.target.value;
     setFormData({

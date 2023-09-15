@@ -8,7 +8,7 @@ const MainContainer = () => {
     
   }
   return (
-    <section className="mainPS containerPS">
+    <section className="mainPS containerPS"> 
       <div className="postttt">
         <Post />
       </div>

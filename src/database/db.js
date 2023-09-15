@@ -1,11 +1,17 @@
 import mongoose from "mongoose";
-export default async function ConnectionDB() {
+import dburl from './config.env'
+const ConnectionDB = async () => {
+  console.log(dburl)
   mongoose
-    .connect("mongodb+srv://root:root@cluster0.baa79lo.mongodb.net/")
+    .connect(dburl)
     .then(() => {
       console.log("connected to database");
+      return;
     })
     .catch((e) => {
       console.log("error while connecting to database", e);
+      return;
     });
-}
+};
+
+module.export = { ConnectionDB };

@@ -7,6 +7,7 @@ import {
   BiShare,
   BiBookmark,
 } from "react-icons/bi";
+import Image from "next/image";
 
 const tempData = [
   {
@@ -37,14 +38,15 @@ const Post = () => {
   return (
     <>
    {
-    tempData.map((item)=>(
-        <div className="postContainer">
+    tempData.map((item,id)=>(
+        <div key={id} className="postContainer">
         <div className="postBox">
           <div className="postTop">
             <div className="postProfile">
               <img
                 src={item.pfp}
                 alt="pfp"
+                
               />
               <div className="nameTopDiv">
                 <h3 className="nameTop">{item.username}</h3>
@@ -56,7 +58,8 @@ const Post = () => {
           <img
             src={item.image}
             alt="post-image"
-            className="postImg"
+            className="postImg" 
+            
           />
           <div className="postBottom">
             <div className="actionIcons">

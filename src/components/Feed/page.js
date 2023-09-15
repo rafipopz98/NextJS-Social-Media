@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../Navbar/page";
 import Story from "../Story/page";
 import MainContainer from '../mainContainer/page'
+import Status from "../Status/page";
+import Nav from "../Nav/page";
 const Feed = () => {
   return (
     <>
@@ -13,3 +15,4 @@ const Feed = () => {
 };
 
 export default Feed;
+ 

@@ -1,0 +1,37 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #fafafa;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+.navWrapper{
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLogo{
+    height: 100%;
+    margin-top: 5px;
+}
+.inputnav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 25px;
+    background-color: #fafafa;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}

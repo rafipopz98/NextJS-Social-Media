@@ -1,0 +1,11 @@
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 270px;
+}
+.plus{
+    background-color: rebeccapurple;
+    padding: 10px;
+    color: #fff;
+}

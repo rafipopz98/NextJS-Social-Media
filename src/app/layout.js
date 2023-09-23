@@ -1,3 +1,4 @@
+import GlobalContextProvider from '@/state/context/GlobalContext'
 import './globals.css'
 import { Raleway } from 'next/font/google'
 
@@ -11,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>{children}</body>
+      <body className={raleway.className}>
+      {/* <GlobalContextProvider> */}
+      {children}
+      {/* </GlobalContextProvider> */}
+      </body>
     </html>
   )
 }

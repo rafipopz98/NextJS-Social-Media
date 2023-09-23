@@ -6,6 +6,7 @@ import React, { useState } from "react";
 const HomePage = () => {
 
   const [isAuthenticated, setIsAuthenticated] = useState(true)
+  
 
   return isAuthenticated?<Feed/>:<Auth/>;
   

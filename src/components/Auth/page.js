@@ -1,12 +1,14 @@
 "use client";
+import { GlobalContext } from "@/state/context/GlobalContext";
 import Icons from "../Icons/Icons";
 import ButtonsText from "../buttonsText/ButtonsText";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaGoogle, FaGithub,FaFacebook } from "react-icons/fa";
 const googleB = "linear-gradient(to right, #919192 0%, #eff2f9 79%);";
 // import {ConnectionDB} from '../../database/db'
 const Auth = () => {
-  
+  const state=useContext(GlobalContext);
+  console.log("hhh",state);
   const [formData, setFormData] = useState({
     username: "",
     password: "",

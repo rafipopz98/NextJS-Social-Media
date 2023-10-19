@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 const HomePage = () => {
 
-  const [isAuthenticated, setIsAuthenticated] = useState(true)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
   
 
   return isAuthenticated?<Feed/>:<Auth/>;

@@ -1,15 +1,17 @@
-'use client'
+"use client";
 import Auth from "@/components/Auth/page";
-import Feed from "@/components/Feed/page";  
+import Feed from "@/components/Feed/page";
 import React, { useState } from "react";
 
 const HomePage = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
-  
-
-  return isAuthenticated?<Feed/>:<Auth/>;
-  
+  return (
+    <div className="App">
+      isAuthenticated?
+      <Feed />:<Auth />;
+    </div>
+  );
 };
 
 export default HomePage;

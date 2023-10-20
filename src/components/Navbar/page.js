@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="left">
         <Link href="/" className="nextLink">
           <span>LOGO</span>
-        </Link>
+        </Link> 
         <div className="search">
           <BsSearch className="icon"/> 
           <input type="text" placeholder="Search" />

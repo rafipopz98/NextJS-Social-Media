@@ -16,7 +16,16 @@ const HomePage = () => {
       <header>
         <Navb />
       </header>
-      {isAuthenticated ? <Feed /> : <Auth />}
+      {isAuthenticated ? (
+        <>
+          <header>
+            <Navb />
+          </header>
+          <Feed />
+        </>
+      ) : (
+        <Auth />
+      )}
     </>
   );
 };

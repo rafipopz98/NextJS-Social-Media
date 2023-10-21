@@ -2,6 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
 }
 
 .container {

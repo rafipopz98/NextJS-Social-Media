@@ -13,9 +13,6 @@ const HomePage = () => {
     //   <Feed />:<Auth />;
     // </div>
     <>
-      <header>
-        <Navb />
-      </header>
       {isAuthenticated ? (
         <>
           <header>

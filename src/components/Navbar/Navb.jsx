@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Navbar.css'
 const Navb = () => {
   return (
     <div className="navbarr navbarrContainer">

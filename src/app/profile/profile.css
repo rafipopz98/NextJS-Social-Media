@@ -1,4 +1,4 @@
-.body {
+.containerjj {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -209,3 +209,156 @@ a {
         margin-top: 0;
     }
 }
+/* profile.css */
+
+/* Style the header */
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style the main container */
+  main {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Style the user image */
+  .img-circle {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style the follow button */
+  .btn-info-outline {
+    background-color: transparent;
+    border: 2px solid #2196F3;
+    color: #2196F3;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the user's name and description */
+  .h2-responsive {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Style the flex menu containing user stats */
+  .flex-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .flex-menu li {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  /* Style the posts grid */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  /* Style the individual post */
+  .col-md-6 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /* Style the post image */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+  }
+  
+  /* Style the post overlay */
+  .hm-black-light {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Style the overlay mask */
+  .mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the icons in the overlay */
+  .flex-menu li p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-menu li p i {
+    margin-right: 5px;
+  }
+  .img-fluid {
+    max-width: 400px;
+    height: auto;
+  }
+    /* CSS - profile.css */
+
+/* Original background color */
+.containerjj {
+    background-color: #ffffff;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+  }
+  
+  /* Define the hover effect */
+  .containerjj:hover {
+    background-color: #f0f0f0; /* Change the background color when hovered */
+  }
+  /* CSS - profile.css */
+/* Original background color */
+.containerjj {
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  /* Define the hover effect */
+  .containerjj:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Apply the hover effect to images */
+  .view.overlay:hover .img-fluid {
+    transform: scale(1.05); /* Scale up the image on hover */
+  }
+  
+  /* Style the white-text on hover */
+  .view.overlay:hover .white-text {
+    opacity: 1;
+  }
+  
+  /* Style the heart icon on hover */
+  .view.overlay:hover .fa-heart {
+    color: red;
+  }
+/* CSS - profile.css */
+/* Define the hover effect */
+.view.overlay:hover .white-text, .view.overlay:hover .fa-heart {
+    opacity: 1;
+  }
+    

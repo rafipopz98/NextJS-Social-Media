@@ -1,99 +1,170 @@
 import React from "react";
 import "./profile.css";
 import Navb from "@/components/Navbar/Navb";
+import Post from "@/components/Post/page";
 const page = () => {
   return (
     <>
       <header>
         <Navb />
       </header>
-      <div className="body">
-        <div class="header__wrapper">
-          <div class="cols__container">
-            <div class="left__col">
-              <div class="img__container">
-                <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Anna Smith"
-                />
-                {/* <span></span> */}
-              </div>
-              <h2>Anna Smith</h2>
-              <p>UX/UI Designer</p>
-              <p>anna@example.com</p>
+      <main>
+        <div className="containerjj">
+          <div className="row m-b-r m-t-3">
+            <div className="col-md-2 offset-md-1">
+              <img
+                src="https://mdbootstrap.com/images/avatars/img%20(1).jpg"
+                alt=""
+                className="img-circle img-fluid"
+              />
+            </div>
+            <div className="col-md-9 p-t-2">
+              <h2 className="h2-responsive">
+                @janedoe{" "}
+                <button
+                  type="button"
+                  className="btn btn-info-outline waves-effect"
+                >
+                  Follow
+                </button>
+              </h2>
+              <p>Jane Doe</p>
 
-              <ul class="about">
+              <ul className="flex-menu">
                 <li>
-                  <span>4,073</span>Followers
+                  <strong>41</strong> posts
                 </li>
                 <li>
-                  <span>322</span>Following
+                  <strong>47k</strong> followers
                 </li>
                 <li>
-                  <span>200,543</span>Attraction
+                  <strong>208</strong> following
                 </li>
               </ul>
+            </div>
+          </div>
 
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  Aliquam erat volutpat. Morbi imperdiet, mauris ac auctor
-                  dictum, nisl ligula egestas nulla.
-                </p>
-
-                <ul>
-                  <li>
-                    <i class="fab fa-twitter"></i>
-                  </li>
-                  <i class="fab fa-pinterest"></i>
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-dribbble"></i>
-                </ul>
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-4">
+              <div className="view overlay hm-black-light m-b-2">
+                <img
+                  src="https://mdbootstrap.com/images/regular/nature/img%20(1).jpg"
+                  className="img-fluid "
+                  alt=""
+                />
+                <div className="mask flex-center">
+                  <ul className="flex-menu">
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-comment" aria-hidden="true"></i> 32
+                      </p>
+                    </li>
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-heart" aria-hidden="true"></i> 1.2k
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="right__col">
-              <nav>
-                <ul>
-                  <li>
-                    <a href="">photos</a>
-                  </li>
-                  <li>
-                    <a href="">videos</a>
-                  </li>
-                </ul>
-                <button>Follow</button>
-              </nav>
-
-              <div class="photos">
+            <div className="col-sm-12 col-md-6 col-lg-4 m-b-2">
+              <div className="view overlay hm-black-light">
                 <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
+                  src="https://mdbootstrap.com/images/regular/nature/img%20(2).jpg"
+                  className="img-fluid "
+                  alt=""
                 />
+                <div className="mask flex-center">
+                  <ul className="flex-menu">
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-comment" aria-hidden="true"></i> 32
+                      </p>
+                    </li>
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-heart" aria-hidden="true"></i> 1.2k
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4 m-b-2">
+              <div className="view overlay hm-black-light">
                 <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
+                  src="https://mdbootstrap.com/images/regular/nature/img%20(3).jpg"
+                  className="img-fluid "
+                  alt=""
                 />
+                <div className="mask flex-center">
+                  <ul className="flex-menu">
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-comment" aria-hidden="true"></i> 32
+                      </p>
+                    </li>
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-heart" aria-hidden="true"></i> 1.2k
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-4 m-b-2">
+              <div className="view overlay hm-black-light">
                 <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
+                  src="https://mdbootstrap.com/images/regular/nature/img%20(4).jpg"
+                  className="img-fluid "
+                  alt=""
                 />
+                <div className="mask flex-center">
+                  <ul className="flex-menu">
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-comment" aria-hidden="true"></i> 32
+                      </p>
+                    </li>
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-heart" aria-hidden="true"></i> 1.2k
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-4 m-b-2">
+              <div className="view overlay hm-black-light">
                 <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
+                  src="https://mdbootstrap.com/images/regular/nature/img%20(5).jpg"
+                  className="img-fluid "
+                  alt=""
                 />
-                <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
-                />
-                <img
-                  src="https://wallpaperaccess.com/full/5045061.jpg"
-                  alt="Photo"
-                />
+                <div className="mask flex-center">
+                  <ul className="flex-menu">
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-comment" aria-hidden="true"></i> 32
+                      </p>
+                    </li>
+                    <li>
+                      <p className="white-text">
+                        <i className="fa fa-heart" aria-hidden="true"></i> 1.2k
+                      </p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

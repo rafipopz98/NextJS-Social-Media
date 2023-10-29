@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
-import './Navbar.css'
+import "./Navbar.css";
+import { useRouter } from "next/router";
 const Navb = () => {
+  const router = useRouter();
   return (
     <div className="navbarr navbarrContainer">
       <a href="#" className="logoo">
@@ -13,7 +16,7 @@ const Navb = () => {
         <a href="#">
           <i className="bx bx-compass"></i>
         </a>
-        <a href="#">
+        <a onClick={() => router.push("/chat")} href="#">
           <i className="bx bx-message-alt-add"></i>
         </a>
         <a href="#">
